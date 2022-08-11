@@ -23,10 +23,12 @@ function createGalleryCard(cards) {
 console.log(galleryItems);
 
 galleryEl.addEventListener('click', onCardClick)
+
 function onCardClick(event) {
-    console.log(event)
-    if(!event.target.contains('gallery'))  {
-    return;
+  event.preventDefault();
+    // console.log(event)
+    if (!event.target.classList.contains("gallery__image")) {
+      return;
     }
     console.log(event.target.dataset.source);
 }
