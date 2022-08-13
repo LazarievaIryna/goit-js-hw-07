@@ -40,7 +40,7 @@ function onCardClick(event) {
 `);
   modalWindow.show();
 
-  document.body.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") modalWindow.close();
-  });
+  // document.body.addEventListener("keydown", (e) => {
+  //   if (e.key === "Escape") modalWindow.close();
+  // });
 }
